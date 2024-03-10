@@ -31,7 +31,7 @@ class BaseModel:
         Returns:
             dictionary of instance key-value pairs
         """
-        dict_rep = self.__dict__
+        dict_rep = dict(self.__dict__)
         dict_rep['__class__'] = self.__class__.__name__
         dict_rep['created_at'] = dict_rep['created_at'].isoformat()
         dict_rep['updated_at'] = dict_rep['updated_at'].isoformat()
