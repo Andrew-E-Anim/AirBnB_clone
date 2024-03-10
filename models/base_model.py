@@ -30,6 +30,6 @@ class BaseModel:
         representation of an object."""
         dict_rep = self.__dict__
         dict_rep['__class__'] = self.__class__.__name__
-        self.created_at = self.created_at.isoformat("%Y-%m-%dT%H:%M:%S.%f")
-        self.updated_at = self.updated_at.isoformat("%Y-%m-%dT%H:%M:%S.%f")
+        dict_rep['created_at'] = self.created_at.isoformat()
+        dict_rep['updated_at'] = self.updated_at.isoformat()
         return dict_rep
