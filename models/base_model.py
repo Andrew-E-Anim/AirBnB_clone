@@ -1,4 +1,4 @@
-""" create a model BaseModel that other classes inherit from."""
+"""create a model BaseModel that other classes inherit from."""
 import uuid
 import datetime
 
@@ -10,8 +10,7 @@ class BaseModel:
         This method initialises the public instance attributes
         Attributes:
             id (string) - a uniques id
-            created_at (datetime) - the time an
-            instance was created
+            created_at (datetime) - the time an instance was created
             updated_at (datetime) - the updated time
         """
         self.updated_at = datetime.datetime.now()
@@ -31,6 +30,6 @@ class BaseModel:
         representation of an object."""
         dict_rep = self.__dict__
         dict_rep['__class__'] = self.__class__.__name__
-        self.created_at = self.created_at.isoformat()
-        self.updated_at = self.updated_at.isoformat()
+        self.created_at = self.created_at.isoformat("%Y-%m-%dT%H:%M:%S.%f")
+        self.updated_at = self.updated_at.isoformat("%Y-%m-%dT%H:%M:%S.%f")
         return dict_rep
