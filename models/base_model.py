@@ -20,7 +20,7 @@ class BaseModel:
 
     def __str__(self):
         """This method returns a string representation"""
-        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+        return f"[{type(self).__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
         """ updates the updated_at attribute """
@@ -36,4 +36,4 @@ class BaseModel:
         dict_rep['__class__'] = type(self).__name__
         dict_rep['created_at'] = dict_rep['created_at'].isoformat()
         dict_rep['updated_at'] = dict_rep['updated_at'].isoformat()
-        return
+        return dict_rep
