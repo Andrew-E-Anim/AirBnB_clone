@@ -20,7 +20,7 @@ class BaseModel:
 
     def __str__(self):
         """This method returns a string representation"""
-        return f"[{type(self).__name__}] ({self.id}) {self.__dict__}"
+        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
 
     def save(self):
         """ updates the updated_at attribute """
