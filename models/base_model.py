@@ -35,6 +35,6 @@ class BaseModel:
         """
         dict_rep = dict(self.__dict__)
         dict_rep['__class__'] = type(self).__name__
-        dict_rep['created_at'] = dict_rep['created_at'].isoformat()
-        dict_rep['updated_at'] = dict_rep['updated_at'].isoformat()
+        dict_rep['created_at'] = self.created_at.isoformat()
+        dict_rep['updated_at'] = self.updated_at.isoformat()
         return dict_rep
