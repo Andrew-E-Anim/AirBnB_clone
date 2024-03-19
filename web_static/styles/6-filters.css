@@ -29,13 +29,14 @@
     height: 100%;
     width: 25%;
     line-height: 0px;
+    position: relative;
 }
 .filters .locations {
     border-right: 1px solid #dddddd;
 }
 .filters h3 {
-    margin-top: 25px;
     font-weight: 600;
+    margin-top: 25px;
 }
 .filters h4 {
     font-weight: 400;
@@ -44,4 +45,29 @@
 .filters h3,
 .filters h4 {
     margin-left: 40px;
+}
+.popover {
+    visibility: hidden;
+    background-color: #fafafa;
+    width: 100%;
+    border: 1px solid #dddddd;
+    list-style: none;
+    margin-top: 27px;
+    border-radius: 4px;
+    padding: 20px 0;
+    line-height: 7px;
+}
+.popover .state2 {
+    margin-top: 35px;
+}
+.popover h2 {
+    font-size: 16px;
+    margin-left: 30px;
+}
+.popover p {
+    margin-left: 40px;
+}
+.locations:hover .popover,
+.amenities:hover .popover {
+	visibility: visible;
 }
