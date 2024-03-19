@@ -1,0 +1,20 @@
+.filters div {
+    height: 100%;
+    width: 25%;
+    line-height: 0px;
+}
+.filters .locations {
+    border-right: 1px solid #dddddd;
+}
+.filters h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+.filters h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
+.filters h3,
+.filters h4 {
+    margin-left: 40px;
+}
