@@ -6,6 +6,4 @@ footer {
     display: grid;
     align-content: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 }

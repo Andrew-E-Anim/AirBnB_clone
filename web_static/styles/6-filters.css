@@ -69,5 +69,5 @@
 }
 .locations:hover .popover,
 .amenities:hover .popover {
-	visibility: visible;
+    visibility: visible;
 }
