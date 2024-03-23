@@ -6,7 +6,7 @@
 }
 .places h1 {
     font-size: 30px;
-    width: 100%;
+    flex: 0 1 100%;
     margin-left: 20px;
 }
 .places h2 {
@@ -103,5 +103,5 @@
     margin-right: 15px;
 }
 .reviews ul li {
-    margin-block: 35 	px;
+    margin-block: 35 px;
 }
